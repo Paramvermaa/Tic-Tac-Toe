@@ -1,0 +1,131 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #F5EDDC;
+    font-family: 'Pacifico', cursive;
+    color: #383838;
+}
+body html
+{
+    height: 100%;
+}
+.main
+{
+    background-color: #EB1D36;
+    border-radius: 20px;
+    border: 20px ridge #383838;
+}
+.main #main_Image
+{
+    margin-top: 10px;
+    width: 200px;
+}
+.container
+{
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container #side_Bar
+{
+    width:35%;
+    height: 100%;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+.container #board_Side
+{
+    width: 65%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#left_Row #characters
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.character
+{
+    width: 100px;
+    height:100px; 
+}
+#left_Row .selector
+{
+    margin-bottom: 30px;
+}
+#left_Row .selector ul
+{
+    list-style: none;
+    border-radius: 5px;
+}
+#left_Row .selector ul li
+{
+    float: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #FA9494;
+    border-right: 2px solid #CFD2CF;
+    border-radius: 5px;
+}
+#left_Row .selector ul li:hover
+{
+    background-color: #CFD2CF;
+    color: #FA9494;
+}
+#left_Row .selector label
+{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#left_Row .selector ul li.active
+{
+    background-color: #CFD2CF;
+    color: #FA9494;
+}
+#new_game
+{
+    background-color: #383838;
+    color: #CFD2CF;
+    padding: 15px 43px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+#left_Row .selector
+{
+    margin-bottom: 30px;
+}
+table
+{
+    border-collapse: collapse;
+    color: #000000;
+    position: absolute;
+    left: 50%;
+    margin-top: 1rem;
+}
+td {
+    border:  10px ridge #000000;
+    height:  100px;
+    width:  150px;
+    text-align:  center;
+    vertical-align:  middle;
+    font-family: 'Hanalei', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Righteous', cursive;
+    font-size:  70px;
+    cursor: pointer;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tct.css">
+</head>
+<body>
+    <div class="container justify-content-center">
+        <div align="center" class="main">
+            <img id="main_Image" src="st_small_507x507-pad_600x600_f8f8f8-removebg-preview.png" alt="DoraemonNobita">
+            <h1 id="main_Head">TIC TAC TOE</h1>
+        </div>
+        <div class="row" style="margin-bottom: 3rem; margin-top: 3rem;">
+        <div id="side_Bar">
+        <div id="left_Row">
+            <div id="characters">
+                <img class="character" src="ae5d2255a584b997aa367209d2ed30c5ac3569a8_original-removebg-preview.png" alt="Nobita">
+                <h3 style="position: inherit;">VS</h3>
+                <img class="character" src="1deb460466fe0f19a7081a047c0c691bb1201b98_original-removebg-preview.png" alt="Doraemon">
+             </div>
+            <div class="selector">
+                <div>
+                    <label style="padding-left: 20%;">Starting Player</label>
+                </div>
+                <div class="player_choices" id="start_Player">
+                    <ul>
+                        <li data-value="1" class="btn active" id="a">Nobita</li>
+                        <li data-value="0" class="btn">Doraemon</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="new_game" class="end_game" onClick="startGame()">New Game
+                <div class="text"></div>
+            </button>
+        </div>
+        </div>
+        <div id="board_Side">
+			<div class="board" id="board">
+				   <table>
+					    <tr>
+					      <td class="cell" id="0"></td>
+					      <td class="cell" id="1"></td>
+					      <td class="cell" id="2"></td>
+					    </tr>
+					    <tr>
+					      <td class="cell" id="3"></td>
+					      <td class="cell" id="4"></td>
+					      <td class="cell" id="5"></td>
+					    </tr>
+					    <tr>
+					      <td class="cell" id="6"></td>
+					      <td class="cell" id="7"></td>
+					      <td class="cell" id="8"></td>
+					    </tr>
+				  </table>
+			</div>
+            </div>
+        </div>
+		</div>
+</body>
+</html>
